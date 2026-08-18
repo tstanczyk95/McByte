@@ -1,11 +1,8 @@
 # [CVPRW 2025] McByte official implementation code.
 
-## <i>Please note: This is the release of the first, academic version of McByte, with a <ins>runnable demo included</ins>. More optimized and engineered version is coming soon. Stay tuned!</i> ##
-<br/>
-
 >**[No Train Yet Gain: Towards Generic Multi-Object Tracking in Sports and Beyond](https://openaccess.thecvf.com/content/CVPR2025W/CVSPORTS/html/Stanczyk_No_Train_Yet_Gain_Towards_Generic_Multi-Object_Tracking_in_Sports_CVPRW_2025_paper.html)**
 >
->[Tomasz Stanczyk](https://www.linkedin.com/in/tomasz-stanczyk/), Seongro Yoon, Francois Bremond
+>[Tomasz Stanczyk](https://www.linkedin.com/in/tomasz-stanczyk/) (first author, code creator), Seongro Yoon, [Francois Bremond](https://www-sop.inria.fr/members/Francois.Bremond/)
 >
 >[*arxiv 2506.01373*](https://arxiv.org/abs/2506.01373)
 
@@ -17,6 +14,12 @@
     <img src="media/3ia_logo.png" alt="3IA Côte d'Azur" height="120">
   </a>
 </p>
+
+Designed and developed at Inria, in the <a href="https://team.inria.fr/stars/">STARS team</a>.
+
+<br/>
+
+<b>🌟🌟🌟 Exciting news! McByte is now also included in the Roboflow Trackers! Be sure to check it out <a href="https://trackers.roboflow.com/2.6.0/trackers/mcbyte/">here</a> as well! 🌟🌟🌟</b>
 
 ## Abstract
 Multi-object tracking (MOT) is essential for sports analytics, enabling performance evaluation and tactical insights. However, tracking in sports is challenging due to fast movements, occlusions, and camera shifts. Traditional tracking-by-detection methods require extensive tuning, while segmentation-based approaches struggle with track processing. We propose McByte, a tracking-by-detection framework that integrates temporally propagated segmentation mask as an association cue to improve robustness without per-video tuning. Unlike many existing methods, McByte does not require training, relying solely on pre-trained models and object detectors commonly used in the community. Evaluated on SportsMOT, DanceTrack, SoccerNet-tracking 2022 and MOT17, McByte demonstrates strong performance across sports and general pedestrian tracking. Our results highlight the benefits of mask propagation for a more adaptable and generalizable MOT approach.
@@ -33,8 +36,7 @@ Multi-object tracking (MOT) is essential for sports analytics, enabling performa
 - [x] 🔥 Directly usable demo 🔥
 - [x] Video input file processing
 - [x] Using custom/oracle detections
-- [ ] Numerical evaluation instructions
-- [ ] More optimized and engineered version
+- [x] More optimized and engineered version - see on <a href="https://github.com/roboflow/trackers">Roboflow Trackers</a>
 
 
 ## Installation and models
