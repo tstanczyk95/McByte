@@ -19,6 +19,15 @@ Designed and developed at Inria, in the <a href="https://team.inria.fr/stars/">S
 
 <br/>
 
+<p align="center">
+  
+[![Papers with Code: SOTA on SportsMOT](https://paperswithcode.co/api/v1/papers/2506.01373/leaderboard-badge.svg?eval=25348&live=1)](https://paperswithcode.co/api/v1/papers/2506.01373/leaderboard-badge-link?eval=25348) 
+[![Papers with Code: #3 on DanceTrack](https://paperswithcode.co/api/v1/papers/2506.01373/leaderboard-badge.svg?eval=25349&live=1)](https://paperswithcode.co/api/v1/papers/2506.01373/leaderboard-badge-link?eval=25349)
+
+</p>
+
+<br/>
+
 <b>🌟🌟🌟 Exciting news! 🌟🌟🌟</b>
 <br/>
 <b>McByte is now also included in the Roboflow Trackers! Be sure to check it out <a href="https://trackers.roboflow.com/2.6.0/trackers/mcbyte/">here</a> as well!</b>
