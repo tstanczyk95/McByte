@@ -325,7 +325,10 @@ def video_demo(det_source, vis_folder, current_time, args):
     height = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)  # float
     fps = cap.get(cv2.CAP_PROP_FPS)
 
-    save_path = osp.join(save_folder, args.path.split("/")[-1])
+    # Same reason as above: on Windows an absolute --path survives the split,
+    # osp.join drops save_folder, and VideoWriter would open the source video
+    # for writing. osp.basename is what the image branch already uses.
+    save_path = osp.join(save_folder, osp.basename(args.path))
     logger.info(f"video save_path is {save_path}")
     vid_writer = cv2.VideoWriter(
         save_path, cv2.VideoWriter_fourcc(*"mp4v"), fps, (int(width), int(height))

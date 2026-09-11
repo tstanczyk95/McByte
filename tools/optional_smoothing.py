@@ -23,7 +23,10 @@ def write_results_score(filename, results):
 def dti(txt_path, save_path, n_min=25, n_dti=20):
     seq_txts = sorted(glob.glob(os.path.join(txt_path, '*.txt')))
     for seq_txt in seq_txts:
-        seq_name = seq_txt.split('/')[-1]
+        # glob returns OS-native separators, so splitting on '/' leaves the whole
+        # path on Windows. os.path.join then discards save_path, and the results
+        # are written back over the input file.
+        seq_name = os.path.basename(seq_txt)
         seq_data = np.loadtxt(seq_txt, dtype=np.float64, delimiter=',')
         min_id = int(np.min(seq_data[:, 1]))
         max_id = int(np.max(seq_data[:, 1]))
